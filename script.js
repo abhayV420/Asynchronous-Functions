@@ -8,7 +8,7 @@
 
 
 // btn.addEventListener('click', ()=>{
-//     if(uInput !== "" && uInput == "Abhay") {
+//     if(uInput !== "" && uInput == "India") {
 //         console.log(uInput);
 //     }else{
 //         message.style.display = "block";
