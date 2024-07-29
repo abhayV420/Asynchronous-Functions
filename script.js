@@ -384,4 +384,108 @@
 //     return getData(4);
 // }).then((value)=>{
 //     console.log(value);
-// })
+// }) 
+
+//                  ______________________________async await_____________________________________
+
+// function getData(data){
+//    return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         console.log(`Your data is: ${data}`);
+//         resolve("success")
+//     }, 2000);
+//    })
+// }
+
+// async function api() {
+//   await  getData(1);
+//   await  getData(2);
+//   await  getData(3);
+//   await  getData(4);
+//   await  getData(5);
+// }
+
+// api()
+
+// function first(game){
+//     return new Promise((resolve, reject)=>{
+//         console.log(`Your 1st favourite gameloft game is:- ${game}`);
+//     })
+// }
+
+// function glGames(game) {
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             console.log(`Your next favourite Gameloft game is:- ${game}`);
+//             resolve("success");
+//         }, 1200);
+//     });
+// };
+
+// //               _____________________1st method to call an async function_________________________
+
+// async function gApi() {
+//     first(`Near orbit vanguard Alliance 3`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern combat 5 Blackout`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Asphalt Legends Unite`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Near Orbit Vanguard Alliance 2`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern combat 4 zero hour`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Asphalt 8 Airbourne`);
+//     console.log(`Getting next data...`)
+//     await glGames(`The dark Knight Rises`);
+//     console.log(`Getting next data...`)
+//     await glGames(`The Amazing Spider-man 2`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern Combat 3 fallen nation`);
+//     console.log(`Getting next data...`)
+//     await glGames(`James cameroon's Avatar`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Rainbow Six: Shadow vanguard`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Near Orbit vanguard Alliance`);
+    
+// }
+
+// gApi();
+
+//               ____________________2nd and simpler method to call an async function_______________
+
+
+// (async () =>{
+//     first(`Near orbit vanguard Alliance 3`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern combat 5 Blackout`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Asphalt Legends Unite`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Near Orbit Vanguard Alliance 2`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern combat 4 zero hour`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Asphalt 8 Airbourne`);
+//     console.log(`Getting next data...`)
+//     await glGames(`The dark Knight Rises`);
+//     console.log(`Getting next data...`)
+//     await glGames(`The Amazing Spider-man 2`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Modern Combat 3 fallen nation`);
+//     console.log(`Getting next data...`)
+//     await glGames(`James cameroon's Avatar`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Rainbow Six: Shadow vanguard`);
+//     console.log(`Getting next data...`)
+//     await glGames(`Near Orbit vanguard Alliance`);
+    
+// })();
+
+
+//                            ___________________Short Method exapmle__________________
+
+                                             (async ()=>{
+
+                                             })
