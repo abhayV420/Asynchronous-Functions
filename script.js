@@ -1,6 +1,6 @@
 // let uInput = document.getElementById("un-input").value;
 // let pInput = document.getElementById("pass-input").value;
-// let btn = document.getElementById("btn");
+let btn = document.getElementById("btn");
 // let message = document.getElementById("message")
 
 // // console.log(pInput);
@@ -486,6 +486,54 @@
 
 //                            ___________________Short Method exapmle__________________
 
-                                             (async ()=>{
+                                            //  (async ()=>{
 
-                                             })
+                                            //  })
+
+                                            
+// It's called the IIFE: Immediately Invoked Function expression, which can be executed only once,means you can't call it again and in order to use it again, you gonna have to copy/paste it.
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+let cat = document.getElementById("cat");
+
+
+// let getapi = async ()=>{
+//     console.log(`getting data...`)
+//     let response = await fetch(URL);
+//     console.log(response);
+//     let data = await response.json();
+//     console.log(data[1].text);
+
+// }
+
+// getapi();
+
+
+//           ______________________with async/await_____________________
+
+
+// let printQuote = async ()=>{
+//     cat.innerText = "Getting Fact...";
+//     let response = await fetch(URL);
+//     let data = await response.json();
+//     let quote = data[1].text;
+//     cat.innerText = quote;
+// }
+
+
+//             __________________with Promise/then()___________________
+
+// function printQuote(){
+//     fetch(URL).then((response)=>{
+        
+//         return response.json();
+//     }).then((response)=>{
+//         console.log(`Parsing data...`)
+//         let quote = response[2].text;
+//         cat.innerText = quote;
+//     })
+// }
+
+btn.addEventListener('click', printQuote);
+
+
